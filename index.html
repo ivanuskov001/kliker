@@ -1,0 +1,48 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<h1>KLИКЕR</h1>
+<p id="txt">счёт: 0</p>
+
+<p><button
+    class="clickbutton"
+     onclick="count()">кликай</button></p>
+<p><button 
+    class="autoclicker"
+    onclick="autocklik()">
+КУПИТЬ АВТОКЛИКЕР
+</button></p>
+<style>
+
+    body{
+
+text-shadow: #0a93dda8 1px 0 0px, #c81010 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+
+        background-image: url(https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDA2MDg4NS9vcmlnaW5hbF84OGI4NjllNDYyNmFmODZiOTAwZTEzZWZhZmViZTA0MS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo5MH0sImpwZWciOnsicXVhbGl0eSI6OTB9LCJyb3RhdGUiOm51bGx9fQ==?bc=0);
+        background-size: cover;
+        text-align: center;
+        font-size: 31pt;
+        font-family: 'Press Start 2P' , cursive;
+        background-position: center;
+}
+    img{
+        width: 100%;
+    }
+    button{
+        background-image: url(https://sopranoclub.ru/images/85-fioletovyh-fonov/file44841.jpg);
+        font-family: 'Press Start 2P', cursive;
+
+    }
+</style>
+<script>
+    var score=0;
+function count(){
+        score++;
+        txt.innerHTML = "СЧЁТ:" + score ;
+}
+function autocklik(){
+    for (let i=0; i<1000;i++)
+    setTimeout(count,1000)
+}
+
+</script>
